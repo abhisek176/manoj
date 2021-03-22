@@ -27,6 +27,7 @@ def make_plot(input_file,fig_name,cmap):
     plt.ylabel(r"Intensity")
     ax.tick_params(direction='out', which='major', length=5, width=1.50)
     fig.savefig(fig_name, bbox_inches='tight',dpi=600)
+    os.remove("final.csv")
     return
 
 """
